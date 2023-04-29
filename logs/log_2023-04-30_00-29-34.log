@@ -1,0 +1,55 @@
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-04-30 00:29:42.309354
+Start name method: search_product
+
+End time: 2023-04-30 00:29:51.850900
+End name method: search_product
+URL: https://www.wildberries.ru/catalog/0/search.aspx?search=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D1%8B
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-04-30 00:29:54.852072
+Start name method: search_with_filters
+
+End time: 2023-04-30 00:30:09.446906
+End name method: search_with_filters
+URL: https://www.wildberries.ru/catalog/0/search.aspx?page=1&sort=popular&search=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D1%8B&fbrand=6049&priceU=1000000%3B5000000&discount=10&f4424=12868
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-04-30 00:30:12.474080
+Start name method: choice_product
+
+End time: 2023-04-30 00:30:12.900104
+End name method: choice_product
+URL: https://www.wildberries.ru/catalog/0/search.aspx?page=1&sort=popular&search=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D1%8B&fbrand=6049&priceU=1000000%3B5000000&discount=10&f4424=12868#c113244922
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-04-30 00:30:12.901104
+Start name method: add_to_cart_and_click
+
+End time: 2023-04-30 00:30:18.953450
+End name method: add_to_cart_and_click
+URL: https://www.wildberries.ru/lk/basket
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product (call)
+Start time: 2023-04-30 00:30:18.955450
+Start name method: order_product
+
+End time: 2023-04-30 00:30:51.708324
+End name method: order_product
+URL: https://www.wildberries.ru/lk/basket
+
+-----
