@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
+from utilites.loggers import Logger
 
 
 class Products_page_1(Base):
@@ -86,6 +87,7 @@ class Products_page_1(Base):
     # Methods
 
     def search_with_filters(self):
+        Logger.add_start_step(method='search_with_filters')
         self.click_filter_button()
         time.sleep(1)
         self.input_price_start('10000')
@@ -99,3 +101,4 @@ class Products_page_1(Base):
         self.choice_phone_memory()
         time.sleep(1)
         self.click_show_button()
+        Logger.add_end_step(url=self.driver.current_url, method='search_with_filters')

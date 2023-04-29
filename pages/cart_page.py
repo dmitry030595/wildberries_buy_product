@@ -5,6 +5,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
 from pages.products_page_2 import Products_page_2
+from utilites.loggers import Logger
 
 
 class Cart_page(Base):
@@ -123,6 +124,7 @@ class Cart_page(Base):
     # Methods
 
     def order_product(self):
+        Logger.add_start_step(method='order_product')
         time.sleep(3)
         self.get_name_of_product()
         self.get_price_of_product()
@@ -138,4 +140,5 @@ class Cart_page(Base):
         self.click_button_order()
         time.sleep(3)
         self.get_screenshot()
+        Logger.add_end_step(url=self.driver.current_url, method='order_product')
 

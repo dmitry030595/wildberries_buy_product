@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
+from utilites.loggers import Logger
 
 
 class Main_page(Base):
@@ -34,6 +35,7 @@ class Main_page(Base):
     # Methods
 
     def search_product(self):
+        Logger.add_start_step(method='search_product')
         self.driver.get(self.url)
         self.driver.maximize_window()
         self.get_current_url()
@@ -42,3 +44,4 @@ class Main_page(Base):
         self.get_search().send_keys(Keys.RETURN)
         self.assert_url('https://www.wildberries.ru/catalog/0/'
                         'search.aspx?search=%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D1%8B')
+        Logger.add_end_step(url=self.driver.current_url, method='search_product')

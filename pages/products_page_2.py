@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
+from utilites.loggers import Logger
 
 
 class Products_page_2(Base):
@@ -54,6 +55,8 @@ class Products_page_2(Base):
     # Methods
 
     def choice_product(self):
+        Logger.add_start_step(method='choice_product')
         self.get_name_of_product()
         self.get_price_of_product()
         self.click_product()
+        Logger.add_end_step(url=self.driver.current_url, method='choice_product')
