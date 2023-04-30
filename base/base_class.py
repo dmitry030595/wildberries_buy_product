@@ -18,8 +18,7 @@ class Base():
         now_date_1 = int(now_date) + 6
         now_date = datetime.datetime.utcnow().strftime('%Y.%m.%d.' + str(now_date_1) + '.%M.%S')
         name_screenshot = 'screenshot' + now_date + '.png'
-        self.driver.save_screenshot('C:\\Users\\Дмитрий\\PycharmProjects\\wildberries_buy_product'
-                                    '\\screen\\' + name_screenshot)
+        self.driver.save_screenshot('.\\screen\\' + name_screenshot)
         print('Screenshot done')
 
     """Method assert url"""
